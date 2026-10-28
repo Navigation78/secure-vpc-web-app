@@ -87,7 +87,7 @@ aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName' --output table
 curl -s https://checkip.amazonaws.com
 ```
 
-Take the result and add `/32`, for example `102.68.79.14/32`. This value restricts SSH access in the template to your machine only, rather than the entire internet. If your IP changes later (new network, ISP rotation), you'll need to update this parameter and redeploy.
+Take the result and add `/32`, for example `203.0.113.25/32`. This value restricts SSH access in the template to your machine only, rather than the entire internet. If your IP changes later (new network, ISP rotation), you'll need to update this parameter and redeploy.
 
 ### Step 4: Deploy the stack
 
